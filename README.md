@@ -3,6 +3,10 @@ WordPress Vagrant File
 
 Purpose of this repository is to set up a simple WordPress vm. This has been done mostly for my own education. The provision script sets up a simple LAMP web stack for development use only. The stack will not be secure for web use out of the box.
 
+Prerequisites
+-------------
+- Install Vagrant and Virtualbox
+
 Installation
 ------------
 
