@@ -16,5 +16,8 @@ Vagrant.configure("2") do |config|
     unzip latest.zip
     rm latest.zip
     printf "CREATE DATABASE wordpress; CREATE USER 'user'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';" | mysql
+    cp -r wordpress/* .
+    rm -r wordpress
+    rm index.html
   SHELL
 end
