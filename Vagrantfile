@@ -8,7 +8,7 @@ config.vm.provider 'virtualbox' do |vb|; vb.customize [ 'modifyvm', :id, '--uart
     apt-get -y install vim
     printf "set nocompatible\nset number\nsyntax on\nset tabstop=2\nset shiftwidth=2\nset expandtab" > ~/.vimrc     
     apt-get -y install apache2
-    sudo apt-get install -y mariadb-server python-mysqldb
+    apt-get install -y mariadb-server python-mysqldb
     apt-get -y install mariadb-server
     apt-get -y install php libapache2-mod-php php-mcrypt php-mysql
     apt-get -y install unzip
