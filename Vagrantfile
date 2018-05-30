@@ -1,4 +1,6 @@
-Vagrant.configure("2") do |config|
+
+Vagrant.configure('2') do |config|
+config.vm.provider 'virtualbox' do |vb|; vb.customize [ 'modifyvm', :id, '--uartmode1', 'disconnected']; end
   config.vm.box = "ubuntu/xenial64"
   config.vm.network "private_network", ip: "100.0.0.2"
   config.vm.provision "shell", inline: <<-SHELL

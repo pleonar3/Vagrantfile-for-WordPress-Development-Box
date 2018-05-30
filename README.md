@@ -1,7 +1,7 @@
 WordPress Vagrant File
 ======================
 
-Purpose of this repository is to set up a WordPress Development VM. The provision script sets up a simple LAMP web stack.
+Purpose of this repository is to set up a WordPress Development VM. The provision script sets up a simple LAMP web stack. Use ./start_vm.sh for cross-platform support (between WSL and native linux).
 
 Prerequisites
 -------------
