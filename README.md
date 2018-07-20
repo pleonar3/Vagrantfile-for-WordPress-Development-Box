@@ -6,6 +6,7 @@ Purpose of this repository is to set up a WordPress Development VM. The provisio
 Prerequisites
 -------------
 - Install Vagrant and Virtualbox
+- I used Vagrant 2.0.1, Virtaulbox 5.2.16 with Linux Kernel 4.13.0
 
 Installation
 ------------
