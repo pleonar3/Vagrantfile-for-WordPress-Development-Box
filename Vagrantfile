@@ -14,7 +14,7 @@ config.vm.provider 'virtualbox' do |vb|; vb.customize [ 'modifyvm', :id, '--uart
     apt-get -y install unzip
     systemctl reload apache2
     cd /var/www/html
-    sudo curl -o latest.zip https://wordpress.org/latest.zip
+    curl -o latest.zip https://wordpress.org/latest.zip
     unzip latest.zip
     rm latest.zip
     printf "CREATE DATABASE wordpress; CREATE USER 'user'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';" | mysql
