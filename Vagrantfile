@@ -10,7 +10,7 @@ config.vm.provider 'virtualbox' do |vb|; vb.customize [ 'modifyvm', :id, '--uart
     apt-get -y install apache2
     apt-get install -y mariadb-server python-mysqldb
     apt-get -y install mariadb-server
-    apt-get -y install php libapache2-mod-php php-mcrypt php-mysql
+    apt-get -y install php libapache2-mod-php php-mcrypt php-mysql php-mbstring
     apt-get -y install unzip
     systemctl reload apache2
     cd /var/www/html
